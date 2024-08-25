@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Fornecedor</title>
+    <link rel="stylesheet" href="../../assets/dist/css/bootstrap.min.css" />
+
+</head>
+<body>
+    <div  class="container" style="width: 700px;">
+
+        <h3 class="fw-bold my-5">Cadastrar Fornecedor</h3>
+  
+        <form> 
+          <div class="mb-3">
+            <label for="nomeCompleto" class="form-label">Nome do Fornecedor</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomeFornecedor"
+              name="nomeFornecedorData"
+              placeholder="Nome do Fornecedor"/>
+          </div>
+
+          <div class="mb-3">
+            <label for="nomeCompleto" class="form-label">Nome Fantasia</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nomeFantasia"
+              name="nomeFantasiaData"
+              placeholder="Nome Fantasia"/>
+          </div>
+  
+          <div class="mb-3">
+            <label for="selectFornecedor" class="form-label">Tipo Fornecedor</label>
+            <select class="form-select" id="selectFornecedor" name="fornecedorData">
+              <option selected>Selecione o Tipo</option>
+              <option>Fisico</option>
+              <option>Juridico</option>
+            </select>
+          </div>
+    
+          <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input
+              type="text"
+              class="form-control"
+              id="marca"
+              name="marcaData"
+              placeholder="Marca"/>
+          </div>
+  
+          <div class="mb-3">
+            <label for="representante" class="form-label">Representante</label>
+            <input
+              type="text"
+              class="form-control"
+              id="representante"
+              name="representanteData"
+              placeholder="Representante"/>
+          </div>
+
+          <div class="mb-3">
+            <label for="contato" class="form-label">Contato</label>
+            <input
+              type="text"
+              class="form-control"
+              id="contato"
+              name="contato"
+              placeholder="contato"/>
+          </div>
+  
+            <div class="d-grid gap-3 d-md-flex justify-content-md-end my-5">
+                <button type="button" 
+                class="btn btn-secondary"
+                style="width: 120px;" onclick="carregar('pages/fornecedores/fornecedor.html')"
+                >Voltar</button>
+
+                <button type="button" 
+                class="btn btn-primary"
+                style="width: 120px;">Cadastrar</button>
+            </div>
+        </form>
+      </div>
+  
+
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/index.js"></script>
+</body>
+</html>
+
+<!--Roberta-->
